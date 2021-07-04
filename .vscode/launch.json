@@ -1,69 +1,34 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Project Debug",
-            "type": "cppdbg",
+            "type": "platformio-debug",
             "request": "launch",
-            "program": "${command:cmake.launchTargetPath}",
-            "args": [
-                "1"
-            ],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-            // "preLaunchTask": "Makefile active file",
-            // "miDebuggerPath": "/usr/bin/gdb"
+            "name": "PIO Debug",
+            "executable": "c:/Users/Tom Harrison/Desktop/Subject Folders/Google Sync/Capstone/Code/robot-hand-leap-motion-teleoperation/.pio/build/uno/firmware.elf",
+            "projectEnvName": "uno",
+            "toolchainBinDir": "C:/Users/Tom Harrison/.platformio/packages/toolchain-atmelavr/bin",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
         },
         {
-            "name": "Catkin Debug",
-            "type": "cppdbg",
+            "type": "platformio-debug",
             "request": "launch",
-            "program": "/home/user/catkin_ws/devel/lib/maze_navigating_robot/main",
-            "additionalSOLibSearchPath": "/home/user/catkin_ws/devel/lib/maze_navigating_robot/;/home/user/catkin_ws/build/maze_navigating_robot/CMakeFiles",
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "catkin build",
-            "launchCompleteCommand": "exec-run"
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "c:/Users/Tom Harrison/Desktop/Subject Folders/Google Sync/Capstone/Code/robot-hand-leap-motion-teleoperation/.pio/build/uno/firmware.elf",
+            "projectEnvName": "uno",
+            "toolchainBinDir": "C:/Users/Tom Harrison/.platformio/packages/toolchain-atmelavr/bin",
+            "internalConsoleOptions": "openOnSessionStart"
         }
-    ],
-    // "inputs": [
-    //     {
-    //         "id": "debugFile",
-    //         "type": "pickString",
-    //         "description": "What file do you want to debug?",
-    //         "default": "a4-prm",
-    //         "options": [
-    //             "a4-prm",
-    //             "a4-ros",
-    //             "a4-graph-test",
-    //             "a4-prm-test",
-    //             "a4-imagehandler-test",
-    //             "a4-region-test",
-    //             "a4-pathing-test",
-    //             "a4-map-test"
-    //         ]
-    //     }
-    // ]
+    ]
 }
