@@ -1,18 +1,37 @@
 #include <Arduino.h>
 #include <Servo.h>
 
-void setup()
-{
-  // put your setup code here, to run once:
-}
+// void setup()
+// {
+//   // put your setup code here, to run once:
+// }
 
-void loop()
-{
-  // put your main code here, to run repeatedly:
-}
+// void loop()
+// {
+//   // put your main code here, to run repeatedly:
+// }
 
 int main(void)
 {
+
+  init();
+  // setup();
+  ///// HIDDEN IN ARDUINO /////
+  /* 
+  int main(void)
+  {
+    init();
+
+    setup();
+      
+    for (;;) {
+      loop();
+    }
+          
+    return 0;
+  }
+  */
+
   Servo servoindex;
   servoindex.attach(3); // Set index servo to digital pin 3
 
