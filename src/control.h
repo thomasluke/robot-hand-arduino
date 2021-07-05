@@ -1,5 +1,7 @@
-#include <Servo.h>
 #include <Arduino.h>
+#include <Servo.h>
+// #include <iostream>
+#include <string.h>
 
 class Control
 {
