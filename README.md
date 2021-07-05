@@ -1,1 +1,1 @@
-# Robot-Hand-Leap-Motion-Teleoperation
+# robot-hand-arduino
